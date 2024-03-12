@@ -1,8 +1,4 @@
 
-
-
-
-
 class LinearEquation:
 
     def __init__(self, coefs: list[float]) -> None:
@@ -18,6 +14,9 @@ class LinearEquation:
     
     def get_padded_coefficients(self) -> list:
         return self._coefs + self.padding
+    
+    def get_length(self) -> int:
+        return len(self.get_padded_coefficients())
     
     def get_solution(self) -> object:
         return self._solution
