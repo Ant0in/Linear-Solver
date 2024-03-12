@@ -40,16 +40,18 @@ class LinearSystem:
                 self.set_greatest_coef_number(new_eq_length)
                 self.pad_system()
 
+    def triangulate_system(self) -> None:
 
+        system: list[LinearEquation] = self.get_system()
 
+        for i in range(0, len(system)):
+            
+            # Pour l'équation i, on va récupérer son élément i (diagonale)
+            a_i = system[i][i]
 
+            for j in range(i + 1, len(system)):
+                
+                # Puis pour chacune des équations 'en dessous' de l'équation i, on va lui soustraire eq1 * (a_j/a_i)
+                a_j = system[j][i]
+                system[j] -= system[i] * (a_j / a_i)
 
-if __name__ == '__main__':
-    
-    e1 = LinearEquation([4, 8, 12, 4])
-    e2 = LinearEquation([3, 8, 13, 5])
-    e3 = LinearEquation([2, 9, 18, 11])
-    a = LinearSystem(e1, e2, e3)
-
-    print(a.get_system())
-    print(a.get_solution_vector())
