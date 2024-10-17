@@ -1,10 +1,28 @@
-# Linear-Solver
-Solveur de systèmes linéaires >__<" uwu owo <3
+# Linear Solver for Linear Systems
 
-- [x] Créer une classe permettant d'initialiser un système linéaire.
-- [x] Permettre d'ajouter une équation au système linéaire.
-- [x] Permettre de rendre le système triangulaire (Pivot de Gauss).
-- [x] Permettre la propagation du résultat -> résolution.
+## Description
 
-- [ ] Ajouter la stabilité de la solution
-- [ ] Implémenter le solveur en C++
+This repository contains a **linear solver** based on **triangulation methods** designed to solve linear systems efficiently. The project was developed as part of the **Calcul Formel et Numérique** course INFO-F205 and applies **triangulation techniques** to optimize the resolution of linear equations systems. The goal is to systematically reduce a system to an upper triangular form and solve it using back substitution.
+
+## Usage
+
+Make sure you have **Python 3.X** installed.
+
+
+### Running the Solver
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Ant0in/Linear-Solver-main.git
+   ```
+
+2. Run the solver:
+
+   ```bash
+   python ./main.py
+   ```
+
+## License
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute this software.
