@@ -14,7 +14,7 @@ Make sure you have **Python 3.X** installed.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Ant0in/Linear-Solver-main.git
+   git clone https://github.com/Ant0in/Linear-Solver.git
    ```
 
 2. Run the solver:
