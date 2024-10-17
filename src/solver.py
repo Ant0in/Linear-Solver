@@ -1,13 +1,10 @@
 
-from linear_equation import LinearEquation
-from linear_system import LinearSystem
+from src.linear_equation import LinearEquation
+from src.linear_system import LinearSystem
 
 
 
 class LinearSystemSolver:
-
-    def __init__(self) -> None:
-        pass
 
     @staticmethod
     def solve_linear_system(system: LinearSystem) -> list:
@@ -52,17 +49,3 @@ class LinearSystemSolver:
                 a_j = system_eq[j][i]
                 system_eq[j] -= system_eq[i] * (a_j / a_i)
 
-
-
-
-
-if __name__ == '__main__':
-    
-    e1 = LinearEquation([1, 2, -1, 1, 6])
-    e2 = LinearEquation([-1, 1, 2, -1, 3])
-    e3 = LinearEquation([2, -1, 2, 2, 14])
-    e4 = LinearEquation([1, 1, -1, 2, 8])
-    
-    SystemeLineaire = LinearSystem(e1, e2, e3, e4)
-    sol = LinearSystemSolver.solve_linear_system(SystemeLineaire)
-    print(sol)

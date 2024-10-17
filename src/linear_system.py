@@ -1,5 +1,5 @@
 
-from linear_equation import LinearEquation
+from src.linear_equation import LinearEquation
 
 
 class LinearSystem:

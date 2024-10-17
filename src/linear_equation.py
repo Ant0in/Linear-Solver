@@ -1,4 +1,5 @@
 
+
 class LinearEquation:
 
     def __init__(self, coefs: list[float]) -> None:
@@ -46,8 +47,6 @@ class LinearEquation:
         for i in (self.get_padded_coefficients() + [self.get_solution()]):
             new_coefs.append(i * k)
         return LinearEquation(new_coefs)
-
-
 
     def __getitem__(self, idx: int) -> object:
         return self.get_padded_coefficients()[idx]
