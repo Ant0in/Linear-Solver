@@ -17,6 +17,12 @@ Make sure you have **Python 3.X** installed.
    git clone https://github.com/Ant0in/Linear-Solver.git
    ```
 
+2. Navigate to the project directory::
+
+   ```bash
+   cd Linear-Solver
+   ```
+   
 2. Run the solver:
 
    ```bash
