@@ -6,7 +6,7 @@ This repository contains a **linear solver** based on **triangulation methods** 
 
 ## Usage
 
-Make sure you have **Python 3.X** installed.
+Make sure you have `Python >= 3.10` installed.
 
 
 ### Running the Solver
